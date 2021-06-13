@@ -1,0 +1,8 @@
+.Basket-logo{
+    width: 200px;
+    height: 150px;
+    margin-top: 200%;
+    margin-right: -200%;
+    z-index: 2;
+    transform: translate(-70%, -10%);
+}

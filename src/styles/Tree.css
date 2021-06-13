@@ -1,0 +1,27 @@
+.Tree-logo{
+    width: 450px;
+    height: 550px;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: -15%;
+    animation-name: shaking;
+    animation-duration: 3s;
+    z-index: -1;
+}
+
+.Stand-still{
+    width: 450px;
+    height: 550px;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: -15%;
+    z-index: -1;
+}
+
+@keyframes shaking {
+    0%   {margin-left:10%;}
+    25%  {margin-left:12%;}
+    50%  {margin-left:10%;}
+    75%  {margin-left:12%;}
+    100% {margin-left:10%;}
+}
