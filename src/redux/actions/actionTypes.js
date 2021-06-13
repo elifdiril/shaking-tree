@@ -1,1 +1,1 @@
-export const SHAKE_TREE="SHAKE_TREE"
+export const SHAKE_TREE = "SHAKE_TREE"

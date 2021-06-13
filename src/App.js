@@ -3,12 +3,10 @@ import Apple from './components/Apple'
 import Tree from './components/Tree'
 import Basket from './components/Basket'
 import React, { useState } from 'react';
-//import {connect} from "react-redux"
-//import { bindActionCreators } from 'redux';
-import {shakeTree} from './redux/actions/appleActions'
+import { shakeTree } from './redux/actions/appleActions'
 import { useDispatch, useSelector } from "react-redux";
 
-function App(props) {
+function App() {
   const appleInStore = useSelector(apple => apple); // get val from redux
   const dispatch = useDispatch();
   const [shake, setShake] = useState(false); //Tree effect control
@@ -37,7 +35,7 @@ function App(props) {
       }
     } // set apples coordinates at random
 
-    dispatch(shakeTree({randomAppleCount}));
+    dispatch(shakeTree({ randomAppleCount }));
     setTotalAppleNumber(totalAppleNumber + randomAppleCount);
   }
 
